@@ -1,0 +1,68 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgb(15, 3, 128),rgb(19, 48, 128),rgb(48, 88, 148),rgb(19, 48, 128), rgb(15, 3, 128));
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 6;
+    }
+    
+    .navbar-brand h1 {
+        color: rgb(196, 195, 195);
+        margin: 0;
+    }
+    
+    .navbar-links {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .navbar-links li {
+        margin: 0;
+    }
+    
+    .navbar-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .navbar-links a:hover {
+        color: #ffcc00; 
+    }
+    .personal-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+        margin-top: 30vh;
+    }
+    .perfil{
+        border-radius: 300px;
+        margin-left: 20rem;
+        filter: drop-shadow(0 0 1em rgb(115, 93, 240));
+    }
+    .mision-vision{
+        h1{
+            margin: 0;
+        }
+        margin-top: 30vh;
+        width: 120%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18em;
+    }
+    .card-item{
+        background-color: rgba(255, 255, 255, 0.185);
+        border-radius: 20px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    
