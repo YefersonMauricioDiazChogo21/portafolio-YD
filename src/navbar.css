@@ -57,12 +57,23 @@
         justify-content: center;
         align-items: center;
         gap: 18em;
+        margin-bottom: 30vh;
     }
     .card-item{
         background-color: rgba(255, 255, 255, 0.185);
         border-radius: 20px;
         text-align: center;
         padding: 15px;
+    }
+    .skills {
+        img{
+            width: 80px;  
+        }
+        
+        display: grid;
+        grid-template-rows: repeat(2 ,16vh);
+        grid-template-columns: repeat(5 ,18vw);
+        grid-auto-flow: row;
     }
 
     

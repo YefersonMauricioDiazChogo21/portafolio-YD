@@ -32,6 +32,25 @@ const Navbar = () => {
                     <p>Lorem ipsum dolor sit, amet consectetur <br /> adipisicing elit. Aliquid sit fugiat <br /> tempora natus rerum assumenda. <br />Exercitationem nisi, atque illo soluta <br />sequi, deleniti deserunt totam,<br /> debitis repellendus at odit obcaecati assumenda!</p>
                 </div>
             </div>
+            <div class="skills">
+                <img src="public/img/python.webp" alt="" />
+                <img src="public/img/html.png" alt="" />
+                <img src="public/img/CSS.png" alt="" />
+                <img src="public/img/JavaScript.png" alt="" />
+                <img src="public/img/vite.png" alt="" />
+                <img src="public/img/react.png" alt="" />
+                <img src="public/img/java.png" alt="" />
+                <img src="public/img/spring-boot.png" alt="" />
+                <img src="public/img/postgres.webp" alt="" />
+                <img src="public/img/mysql.png" alt="" />
+                
+            </div>
+            <div class="proyectos">
+
+            </div>
+            <div class="contacto">
+
+            </div>
         </>
     );
 };
