@@ -1,4 +1,9 @@
-
+body{
+    justify-content: center;
+}
+.nav{
+    width: 100vw;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -7,73 +12,242 @@
     padding: 1rem;
     position: fixed;
     top: 0;
-    width: 99%;
+    width: 98vw;
     z-index: 6;
-    }
+    left: 0;
+}
     
-    .navbar-brand h1 {
-        color: rgb(196, 195, 195);
+.navbar-brand h1 {
+    color: rgb(196, 195, 195);
+    margin: 0;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #ffcc00; 
+}
+.personal-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin-top: 30vh;
+    font-size: 1vw;
+}
+.perfil{
+    border-radius: 300px;
+    filter: drop-shadow(0 0 1em rgb(115, 93, 240));
+    width: 28vw;
+}
+.mision-vision{
+    h1{
         margin: 0;
     }
-    
-    .navbar-links {
-        list-style: none;
-        display: flex;
-        gap: 2rem;
+    margin-top: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18em;
+    margin-bottom: 30vh;
+}
+.card-item{
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    img{
+        width: 8vw;
+        height: 8vw;
+    }
+    #python{
+        width: 8vw;
+        height: 8vw;
+        margin-right: 3vw;
+        margin-left: 2vw;
+    }
+    #html{
+        width: 8vw;
+        height: 8vw;
+    }
+    #css{
+        width: 13.5vw;
+        height: 8vw;
+    }
+    #javascript{
+        width: 13vw;
+        height: 8vw;
+    }
+    #react{
+        width: 6vw;
+        height: 7vw;
+        margin: 0 0 0 2vw;
+    }
+    #java{
+        width: 13vw;
+        height: 8vw;
+    }
+    #spring{
+        width: 13vw;
+        height: 7vw;
     }
     
-    .navbar-links li {
-        margin: 0;
+    #mysql{
+        margin: 0 2vw;
     }
+    filter: drop-shadow(0 0 1em rgb(90, 80, 233));
+
+
+}
+
+.card {
+    width: 20%;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease-in-out; /* Animación más fluida */
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.skill-row{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.skill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out; 
+}
+
+.texto {
+    color: white;
+    transform: rotateY(180deg); 
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1vw;
+    background-color: rgba(6, 6, 7, 0.377);
+}
+
+
+.proyectos {
+    top: 30vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.arrow {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.project-panel {
+    display: flex;
+transition: transform 0.5s ease;
+}
+
+
+.project {
     
-    .navbar-links a {
-        color: white;
-        text-decoration: none;
-        transition: color 0.3s;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #f4f4f442;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+}
+
+
+.contacto{
+    display: flex;
+    margin-top: 60vh;
+    align-items: center;
+    justify-content: center;
+
+    img:hover{
+        scale: 1.2;
+        transition-duration: 1s;
+        transition-property: all;
     }
-    
-    .navbar-links a:hover {
-        color: #ffcc00; 
+}
+#github{
+    width: 3vw;
+    filter: drop-shadow(0 0 0.6em rgb(90, 80, 233));
+}
+#gmail{
+    width: 4vw;
+    filter: drop-shadow(0 0 0.6em rgb(231, 244, 245));
+}
+#whatsapp{
+    width: 4vw;
+    filter: drop-shadow(0 0 0.6em rgb(44, 207, 71));
+}
+#linkedin{
+    width: 3vw;
+    filter: drop-shadow(0 0 0.6em rgb(25, 221, 235));
+}
+
+@media (max-width:780px) {
+    .navbar{
+        width: 115vw;
     }
-    .personal-info{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3em;
-        margin-top: 30vh;
-    }
-    .perfil{
-        border-radius: 300px;
-        margin-left: 20rem;
-        filter: drop-shadow(0 0 1em rgb(115, 93, 240));
-    }
-    .mision-vision{
-        h1{
-            margin: 0;
-        }
-        margin-top: 30vh;
-        width: 120%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 18em;
-        margin-bottom: 30vh;
-    }
-    .card-item{
-        background-color: rgba(255, 255, 255, 0.185);
-        border-radius: 20px;
-        text-align: center;
-        padding: 15px;
-    }
-    .skills {
-        img{
-            width: 80px;  
-        }
-        
-        display: grid;
-        grid-template-rows: repeat(2 ,16vh);
-        grid-template-columns: repeat(5 ,18vw);
-        grid-auto-flow: row;
+    .navbar-links{
+        display: none;
     }
 
-    
+
+}

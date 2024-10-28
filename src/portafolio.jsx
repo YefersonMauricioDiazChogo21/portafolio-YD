@@ -10,3 +10,4 @@ ReactDOM.createRoot(document.getElementById('nav')).render(
         <Navbar />
     </React.StrictMode>,
     )
+    

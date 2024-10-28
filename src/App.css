@@ -54,27 +54,10 @@ h1, h3, .read-the-docs {
   filter: drop-shadow(0.01em 0.01em 0.2em rgb(26, 2, 241));
 }
 
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-yd{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
 }
 
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #b6b4b465;
-}
