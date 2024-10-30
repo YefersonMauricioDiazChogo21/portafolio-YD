@@ -1,6 +1,7 @@
 body{
     justify-content: center;
 }
+
 .nav{
     width: 100vw;
 }
@@ -54,6 +55,12 @@ body{
     filter: drop-shadow(0 0 1em rgb(115, 93, 240));
     width: 28vw;
 }
+.descripcion{
+    width: 35vw;
+    p{
+        margin: 0;
+    }
+}
 .mision-vision{
     h1{
         margin: 0;
@@ -64,7 +71,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 18em;
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
 }
 .card-item{
     background-color: rgba(255, 255, 255, 0.185);
@@ -72,6 +79,15 @@ body{
     text-align: center;
     padding: 15px;
 }
+.objetivos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30vh;
+}
+.item3{
+    width: 33%;
+}
+
 .skills{
     display: flex;
     flex-direction: column;
@@ -116,6 +132,8 @@ body{
     
     #mysql{
         margin: 0 2vw;
+        width: 8vw;
+        height: 8vw;
     }
     filter: drop-shadow(0 0 1em rgb(90, 80, 233));
 
@@ -174,6 +192,7 @@ body{
     margin: auto;
 }
 
+
 .arrow {
     background-color: #333;
     color: #fff;
@@ -186,12 +205,29 @@ body{
     transform: translateY(-50%);
     z-index: 1;
 }
+
+#img1{
+    width: 13vw;
+}
+#img3{
+    width: 12vw;
+}
+.titulo-proyecto{
+    color: rgb(31, 163, 168);
+    margin: 0;
+}
+.click{
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+    color: #74ddf0;
+}
 .left {
-    left: 0;
+    left: 0.5vw;
 }
 
 .right {
-    right: 0;
+    right: 0.5vw;
 }
 
 .project-panel {
@@ -201,20 +237,30 @@ transition: transform 0.5s ease;
 
 
 .project {
-    
-    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 43.93vw;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 50px;
     background: #f4f4f442;
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 40px;
 }
 
+#mysql2{
+    width: 2vw;
+}
+footer{
+    width: 100%;
+    margin-top: 60vh;
+    background-color: rgba(0, 0, 0, 0.671);
+    text-align: center;
+}
 
 .contacto{
     display: flex;
-    margin-top: 60vh;
+    
     align-items: center;
     justify-content: center;
 

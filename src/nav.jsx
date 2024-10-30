@@ -1,12 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css'; 
 import StarBackground from './starBack'; // Importa el fondo
 
 const Navbar = () => {
+    const [currentProject, setCurrentProject] = useState(0);
+    const projects = [
+        {
+            title: 'PrestService',
+            description: 'Proyecto java con SpringBot e implementación de Spring Security, trabaja en la gestión de servicios de una empresa, en colaboración con Laura Torres y Karol Ramirez.',
+            link: 'https://github.com/Karol-Ramirez03/proservicehub.git',
+            img: 'public/img/prest-removebg-preview.png',
+            id:'img1'
+        },
+        {
+            title: '¿Cuánto cuesta mi App?',
+            description: 'Aplicativo web con Lit, donde los usuarios pueden cotizar la creación de sus páginas web según especificaciones. Proyecto en colaboración con Laura Torres y Karol Ramirez.',
+            link: 'https://github.com/Karol-Ramirez03/costo-app',
+            img: 'public/img/costoApp.png',
+            id:'img2'
+        },
+        {
+            title: 'Burger Fest',
+            description: 'Proyecto HTML y CSS, basado en una interfaz sencilla de una tienda virtual de productos alimenticios.',
+            link: 'https://yefersonmauriciodiazchogo21.github.io/hamburguesa_proyecto',
+            img: 'public/img/hamburguesa.png',
+            id:'img3'
+        },
+        {
+            title: 'Otro',
+            description: 'Proyecto HTML y CSS, basado en una interfaz sencilla de una tienda virtual de productos alimenticios.',
+            link: '',
+            img: '',
+            id:'img4'
+        },
+        {
+            title: 'Otro 2',
+            description: 'Proyecto HTML y CSS, basado en una interfaz sencilla de una tienda virtual de productos alimenticios.',
+            link: '',
+            img: '',
+            id:'img5'
+        }
+        
+    ];
+
+    const handleNextProject = () => {
+        setCurrentProject((prev) => (prev + 1) % projects.length);
+    };
+
+    const handlePreviousProject = () => {
+        setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length);
+    };
     
     return (
         <>
-            <StarBackground /> {/* Agrega el fondo estrellado */}
+            <StarBackground /> {}
             <nav className="navbar">
                 <div className="navbar-brand">
                     <h1>Yeferson Diaz</h1>
@@ -21,16 +68,24 @@ const Navbar = () => {
             </nav>
             <div class="personal-info">
                 <img class="perfil" src="public/img/porfile.png" alt="" />
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing <br />elit. Adipisci quae cumque ducimus harum facilis at <br />labore veniam nam aspernatur dolores debitis autem <br />pariatur vero laudantium suscipit nostrum, quidem <br />nesciunt dicta. Lorem ipsum dolor sit amet <br />consectetur adipisicing elit. Veritatis numquam mollitia <br /> tempore et, quo perspiciatis iusto ullam odit, repellat <br /> architecto esse? Odio ea sed fuga recusandae, <br />quasi accusamus facere dolorum!</h2>
+                <h2 class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quae cumque ducimus harum facilis at labore veniam nam aspernatur dolores debitis autem pariatur vero laudantium suscipit nostrum, quidem nesciunt dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam mollitia  tempore et, quo perspiciatis iusto ullam odit, repellat architecto esse? Odio ea sed fuga recusandae, quasi accusamus facere dolorum!</h2>
             </div>
-            <div class="mision-vision">
-                <div class="card-item">
-                    <h1>Mision</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur <br /> adipisicing elit. Aliquid sit fugiat <br /> tempora natus rerum assumenda. <br />Exercitationem nisi, atque illo soluta <br />sequi, deleniti deserunt totam,<br /> debitis repellendus at odit obcaecati assumenda!</p>
+            <div class="about">
+                <div class="mision-vision">
+                    <div class="card-item">
+                        <h1>Mision</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur <br /> adipisicing elit. Aliquid sit fugiat <br /> tempora natus rerum assumenda. <br />Exercitationem nisi, atque illo soluta <br />sequi, deleniti deserunt totam,<br /> debitis repellendus at odit obcaecati assumenda!</p>
+                    </div>
+                    <div class="card-item">
+                        <h1>Vision</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur <br /> adipisicing elit. Aliquid sit fugiat <br /> tempora natus rerum assumenda. <br />Exercitationem nisi, atque illo soluta <br />sequi, deleniti deserunt totam,<br /> debitis repellendus at odit obcaecati assumenda!</p>
+                    </div>
                 </div>
-                <div class="card-item">
-                    <h1>Vision</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur <br /> adipisicing elit. Aliquid sit fugiat <br /> tempora natus rerum assumenda. <br />Exercitationem nisi, atque illo soluta <br />sequi, deleniti deserunt totam,<br /> debitis repellendus at odit obcaecati assumenda!</p>
+                <div class="objetivos">
+                    <div class="card-item item3">
+                        <h1>Objetivos</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius iste facere aperiam tempore omnis necessitatibus ipsum! Incidunt dolorem recusandae aliquid vitae, debitis hic expedita magnam nam animi atque iusto sequi.</p>
+                    </div>
                 </div>
             </div>
             <div class="skills">
@@ -121,31 +176,44 @@ const Navbar = () => {
                 </div>
                 
             </div>
-            <div class="proyectos">
-                <button class="arrow left">&#10094;</button>
-                <div class="project-panel">
-                    <div class="project project1">
-                        <h3>Proyecto 1</h3>
-                        <p>Descripción del proyecto 1...</p>
-                    </div>
-                    <div class="project project2">
-                        <h3>Proyecto 2</h3>
-                        <p>Descripción del proyecto 2...</p>
-                    </div>
-                    <div class="project project3">
-                        <h3>Proyecto 3</h3>
-                        <p>Descripción del proyecto 3...</p>
+            <div className="proyectos">
+                <button className="arrow left" onClick={handlePreviousProject}>&#10094;</button>
+                <div className="project-panel">
+                    <div className="project">
+                        <h3 class="titulo-proyecto">{projects[currentProject].title}</h3>
+                        <p>{projects[currentProject].description}</p>
+                        <a href={projects[currentProject].link} target="_blank">
+                            {projects[currentProject].img && <img id={projects[currentProject].id} src={projects[currentProject].img} alt={projects[currentProject].title}  />}
+                            <p class="click">Haz click en la imagen para saber mas...</p>
+                        </a>
                     </div>
                 </div>
-                
-                <button class="arrow right">&#10095;</button>
+                <button className="arrow right" onClick={handleNextProject}>&#10095;</button>
             </div>
             <footer>
+                <h3>Contacta Conmigo:</h3>
                 <div class="contacto">
-                    <img id="github" src="public/img/github.png" alt="" />
-                    <img id="gmail" src="public/img/gmail.png" alt="" />
-                    <img id="whatsapp" src="public/img/whatsapp.png" alt="" />
-                    <img id="linkedin" src="public/img/linkedin.png" alt="" />
+                    
+                    <div>
+                        <a href="https://github.com/YefersonMauricioDiazChogo21" target="_blank">
+                            <img id="github" src="public/img/github.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mailto:yefersondiaz2001gmail.com" target='_blank'>
+                            <img id="gmail" src="public/img/gmail.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://wa.me/3143807720" target='_blank'>
+                            <img id="whatsapp" src="public/img/whatsapp.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/yeferson-mauricio-diaz-chogo-9645bb2a5/" target='_blank'>
+                            <img id="linkedin" src="public/img/linkedin.png" alt="" />
+                        </a>
+                    </div>
                 </div>
             </footer>
         </>
