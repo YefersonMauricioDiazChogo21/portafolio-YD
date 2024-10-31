@@ -55,6 +55,13 @@ body{
     filter: drop-shadow(0 0 1em rgb(115, 93, 240));
     width: 28vw;
 }
+.hr{
+    margin-top: 8vw;
+    width: 80%;
+}
+.skill-row1{
+    margin-bottom: 10vw;
+}
 .descripcion{
     width: 35vw;
     p{
@@ -65,13 +72,13 @@ body{
     h1{
         margin: 0;
     }
-    margin-top: 30vh;
+    margin-top: 15vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 18em;
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
 }
 .card-item{
     background-color: rgba(255, 255, 255, 0.185);
@@ -83,6 +90,9 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 30vh;
+}
+.item{
+    width: 25%;
 }
 .item3{
     width: 33%;
@@ -212,6 +222,12 @@ body{
 #img3{
     width: 12vw;
 }
+#img4{
+    width: 12vw;
+}
+#img5{
+    width: 20vw;
+}
 .titulo-proyecto{
     color: rgb(31, 163, 168);
     margin: 0;
@@ -239,7 +255,7 @@ transition: transform 0.5s ease;
 .project {
     display: flex;
     flex-direction: column;
-    min-width: 43.93vw;
+    min-width: 100%;
     box-sizing: border-box;
     padding: 50px;
     background: #f4f4f442;
@@ -252,15 +268,23 @@ transition: transform 0.5s ease;
     width: 2vw;
 }
 footer{
+    position: absolute;
+    left: 0;
+    margin: 0;
     width: 100%;
     margin-top: 60vh;
     background-color: rgba(0, 0, 0, 0.671);
     text-align: center;
 }
-
+#contact{
+    h3,h4{
+        margin: 0;
+    }
+}
 .contacto{
     display: flex;
-    
+    margin-top: 2.5vw;
+    margin-bottom: 1.5vw;
     align-items: center;
     justify-content: center;
 
@@ -288,12 +312,66 @@ footer{
 }
 
 @media (max-width:780px) {
+    .personal-info{
+        flex-direction: column;
+    }
+    .perfil{
+        width: 60vw;
+    }
+    .descripcion{
+        width: 80vw;
+        font-size: 15px;
+    }
     .navbar{
         width: 115vw;
     }
     .navbar-links{
         display: none;
     }
+    .mision-vision{
+        flex-direction: column;
+        width: 250vw;
+    }
+    .item3{
+        width: 65vw;
+    }
+    .card{
+        left: 100vw;
+        img{
+            width: 15vw;
+            height: 18vh;
+        }
+        #python{
+            width: 17;
+            height: 13vh;
+        }
+        #vite{
+            width: 12vw;
+            height: 8vh;
+        }
+        #posgre{
+            width: 11vw;
+            height: 8vh;
+        }
+    }
+    .texto{
+        font-size: 20px;
+    }
+    .skill-row{
+        flex-direction: column;
+    }
+    #github{
+        width: 7vw;
+    }
+    #gmail{
+        width: 8vw;
+    }
 
+    #whatsapp{
+        width: 8vw;
+    }
+    #linkedin{
+        width: 7vw;
+    }
 
 }

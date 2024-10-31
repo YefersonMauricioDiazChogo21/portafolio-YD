@@ -27,17 +27,17 @@ const Navbar = () => {
             id:'img3'
         },
         {
-            title: 'Otro',
-            description: 'Proyecto HTML y CSS, basado en una interfaz sencilla de una tienda virtual de productos alimenticios.',
-            link: '',
-            img: '',
+            title: 'ElectricManager',
+            description: 'Sistema de gestión con java, que permite el manejo y control completo sobre distintas funciones que controlan y almacenan datos para una tienda de servicios eléctricos escalable, cuenta con una conexión con MySQL y su respectiva Base de Datos',
+            link: 'https://github.com/YefersonMauricioDiazChogo21/electricmanager',
+            img: 'public/img/brigth-pro.png',
             id:'img4'
         },
         {
-            title: 'Otro 2',
-            description: 'Proyecto HTML y CSS, basado en una interfaz sencilla de una tienda virtual de productos alimenticios.',
-            link: '',
-            img: '',
+            title: 'LandingMaker',
+            description: 'Este proyecto consiste en la replicación de 48 landing pages utilizando HTML y CSS. Cada página fue analizada y recreada para estudiar sus estructuras y elementos de diseño. En colaboracion con Maria Fernanada Gamez',
+            link: 'https://github.com/MariaFernandaGamez/proyecto_Landing_Pages',
+            img: 'public/img/landing.png',
             id:'img5'
         }
         
@@ -54,7 +54,7 @@ const Navbar = () => {
     return (
         <>
             <StarBackground /> {}
-            <nav className="navbar">
+            <nav  id="home" className="navbar">
                 <div className="navbar-brand">
                     <h1>Yeferson Diaz</h1>
                 </div>
@@ -67,32 +67,43 @@ const Navbar = () => {
                 </ul>
             </nav>
             <div class="personal-info">
-                <img class="perfil" src="public/img/porfile.png" alt="" />
-                <h2 class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quae cumque ducimus harum facilis at labore veniam nam aspernatur dolores debitis autem pariatur vero laudantium suscipit nostrum, quidem nesciunt dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam mollitia  tempore et, quo perspiciatis iusto ullam odit, repellat architecto esse? Odio ea sed fuga recusandae, quasi accusamus facere dolorum!</h2>
-            </div>
+                <img class="perfil" src="public/img/porfile.jpg" alt="" />
+                <div>
+                    <h2  class="descripcion">Eficiente, eficaz y empirico son las tres E que me caracterizan como programador, soy un desarrollador de software con énfasis en backend, me caracterizo por mi capacidad de aprendizaje rápido y retención de información, a lo largo de mi experiencia en este campo he fortalecido mis habilidades técnicas así como mi trabajo en equipo, comunicación asertiva y resolución de problemas. Aspiro a crecer como programador y enriquecer mis conocimiento para contribuir de manera significativa en el éxito de cada proyecto.</h2>
+                </div>
+            </div >
+
+            <hr class="hr" id="about"  />
             <div class="about">
                 <div class="mision-vision">
-                    <div class="card-item">
-                        <h1>Mision</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur <br /> adipisicing elit. Aliquid sit fugiat <br /> tempora natus rerum assumenda. <br />Exercitationem nisi, atque illo soluta <br />sequi, deleniti deserunt totam,<br /> debitis repellendus at odit obcaecati assumenda!</p>
+                    <div class="card-item item">
+                        <h1 class="titulo-proyecto">Mision</h1>
+                        <p>Al ofrecer mis servicios de manera presencial y remota, busco establecer relaciones sólidas y duraderas con las empresas, apoyando su crecimiento sostenible y ayudándolas a enfrentar los desafíos del entorno actual. En última instancia, mi misión es contribuir al éxito de cada organización con la que colaboro, dejando una huella significativa en la sociedad a través de la tecnología.</p>
                     </div>
-                    <div class="card-item">
-                        <h1>Vision</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur <br /> adipisicing elit. Aliquid sit fugiat <br /> tempora natus rerum assumenda. <br />Exercitationem nisi, atque illo soluta <br />sequi, deleniti deserunt totam,<br /> debitis repellendus at odit obcaecati assumenda!</p>
+                    <div class="card-item item">
+                        <h1 class="titulo-proyecto" >Vision</h1>
+                        <p>Ser un referente en soluciones tecnológicas integrales que transformen y potencien a las organizaciones, anticipando sus necesidades en un entorno en constante cambio. Aspiro a crear un ecosistema donde cada proyecto realizado sea una pieza clave en la construcción de un futuro más innovador, ético y sostenible, inspirando a otros a ver la tecnología como una fuerza de cambio positivo en la sociedad.</p>
                     </div>
                 </div>
                 <div class="objetivos">
                     <div class="card-item item3">
-                        <h1>Objetivos</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius iste facere aperiam tempore omnis necessitatibus ipsum! Incidunt dolorem recusandae aliquid vitae, debitis hic expedita magnam nam animi atque iusto sequi.</p>
+                        <h1 class="titulo-proyecto">Objetivos</h1>
+                        <p>
+                            º Con micapacidad para enfrentar desafíos tecnológicos, deseo brindar servicios personalizados de alta calidad.
+                            <br />
+                            
+                            º Implementar soluciones tecnológicas innovadoras en todos los proyectos, levando una actualización sobre nuevas tendencias y tecnologías que aporten al crecimiento sostenible.
+                            <br />
+                            º Ampliar la oferta de servicios remotos en un 50% en los próximos dos años, facilitando el acceso a soluciones tecnológicas a empresas en diferentes regiones, sin perder la cercanía y el soporte continuo.</p>
                     </div>
                 </div>
             </div>
-            <div class="skills">
+            <hr class="hr skill-row1" id="skill"  />
+            <div id="skill" class="skills">
                 <div class="skill-row">
                     <div class="card">
                         <div class="skill img">
-                            <img src="public/img/python.webp" alt="" />
+                            <img id="python" src="public/img/python.webp" alt="" />
                         </div>
                         <div class="skill texto">
                             <p>Lenguaje de programación multiparadigma, que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida. </p>
@@ -124,7 +135,7 @@ const Navbar = () => {
                     </div>
                     <div class="card">
                         <div class="skill img">
-                            <img src="public/img/vite.png" alt="" />
+                            <img id="vite" src="public/img/vite.png" alt="" />
                         </div>
                         <div class="skill texto">
                             <p>Herramienta de compilación que proporciona una experiencia de desarrollo más rápida y ágil para proyectos web modernos.</p>
@@ -176,6 +187,7 @@ const Navbar = () => {
                 </div>
                 
             </div>
+            <hr class="hr " id="projects"   />
             <div className="proyectos">
                 <button className="arrow left" onClick={handlePreviousProject}>&#10094;</button>
                 <div className="project-panel">
@@ -190,8 +202,10 @@ const Navbar = () => {
                 </div>
                 <button className="arrow right" onClick={handleNextProject}>&#10095;</button>
             </div>
-            <footer>
-                <h3>Contacta Conmigo:</h3>
+            <footer id="contact">
+                <h2>Contacta Conmigo:</h2>
+                <h3>Yeferson Mauricio Diaz Chogo</h3>
+                <h4>Junior Developer</h4>
                 <div class="contacto">
                     
                     <div>
