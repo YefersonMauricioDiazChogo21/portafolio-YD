@@ -228,6 +228,10 @@ const Navbar = () => {
                             <img id="linkedin" src="public/img/linkedin.png" alt="" />
                         </a>
                     </div>
+
+                </div>
+                <div>
+                    <p>Creado con React y mucho &#10084;</p>
                 </div>
             </footer>
         </>
