@@ -9,35 +9,35 @@ const Navbar = () => {
             title: 'PrestService',
             description: 'Proyecto java con SpringBot e implementación de Spring Security, trabaja en la gestión de servicios de una empresa, en colaboración con Laura Torres y Karol Ramirez.',
             link: 'https://github.com/Karol-Ramirez03/proservicehub.git',
-            img: 'public/img/prest-removebg-preview.png',
+            img: 'img/prest-removebg-preview.png',
             id:'img1'
         },
         {
             title: '¿Cuánto cuesta mi App?',
             description: 'Aplicativo web con Lit, donde los usuarios pueden cotizar la creación de sus páginas web según especificaciones. Proyecto en colaboración con Laura Torres y Karol Ramirez.',
             link: 'https://github.com/Karol-Ramirez03/costo-app',
-            img: 'public/img/costoApp.png',
+            img: 'img/costoApp.png',
             id:'img2'
         },
         {
             title: 'Burger Fest',
             description: 'Proyecto HTML y CSS, basado en una interfaz sencilla de una tienda virtual de productos alimenticios.',
             link: 'https://yefersonmauriciodiazchogo21.github.io/hamburguesa_proyecto',
-            img: 'public/img/hamburguesa.png',
+            img: 'img/hamburguesa.png',
             id:'img3'
         },
         {
             title: 'ElectricManager',
             description: 'Sistema de gestión con java, que permite el manejo y control completo sobre distintas funciones que controlan y almacenan datos para una tienda de servicios eléctricos escalable, cuenta con una conexión con MySQL y su respectiva Base de Datos',
             link: 'https://github.com/YefersonMauricioDiazChogo21/electricmanager',
-            img: 'public/img/brigth-pro.png',
+            img: 'img/brigth-pro.png',
             id:'img4'
         },
         {
             title: 'LandingMaker',
             description: 'Este proyecto consiste en la replicación de 48 landing pages utilizando HTML y CSS. Cada página fue analizada y recreada para estudiar sus estructuras y elementos de diseño. En colaboracion con Maria Fernanada Gamez',
             link: 'https://github.com/MariaFernandaGamez/proyecto_Landing_Pages',
-            img: 'public/img/landing.png',
+            img: 'img/landing.png',
             id:'img5'
         }
         
@@ -67,7 +67,7 @@ const Navbar = () => {
                 </ul>
             </nav>
             <div class="personal-info">
-                <img class="perfil" src="public/img/porfile.jpg" alt="" />
+                <img class="perfil" src="img/porfile.jpg" alt="" />
                 <div>
                     <h2  class="descripcion">Eficiente, eficaz y empirico son las tres E que me caracterizan como programador, soy un desarrollador de software con énfasis en backend, me caracterizo por mi capacidad de aprendizaje rápido y retención de información, a lo largo de mi experiencia en este campo he fortalecido mis habilidades técnicas así como mi trabajo en equipo, comunicación asertiva y resolución de problemas. Aspiro a crecer como programador y enriquecer mis conocimiento para contribuir de manera significativa en el éxito de cada proyecto.</h2>
                 </div>
@@ -103,7 +103,7 @@ const Navbar = () => {
                 <div class="skill-row">
                     <div class="card">
                         <div class="skill img">
-                            <img id="python" src="public/img/python.webp" alt="" />
+                            <img id="python" src="img/python.webp" alt="" />
                         </div>
                         <div class="skill texto">
                             <p>Lenguaje de programación multiparadigma, que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida. </p>
@@ -111,7 +111,7 @@ const Navbar = () => {
                     </div>
                     <div class="card">
                         <div class="skill img">
-                            <img id="html" src="public/img/html.png" alt="" />
+                            <img id="html" src="img/html.png" alt="" />
                         </div>
                         <div class="skill texto">
                             <p>Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.</p>
@@ -119,7 +119,7 @@ const Navbar = () => {
                     </div>
                     <div class="card">
                         <div class="skill img">
-                            <img id="css" src="public/img/CSS.png" alt="" />
+                            <img id="css" src="img/CSS.png" alt="" />
                         </div>
                         <div class="skill texto">
                             <p>Utilizado para diseñar y dar estilo a las páginas web, por ejemplo, alterando la fuente, color, tamaño y espaciado del contenido, etc...</p>
@@ -127,7 +127,7 @@ const Navbar = () => {
                     </div>
                     <div class="card">
                         <div class="skill img">
-                            <img id="javascript" src="public/img/JavaScript.png" alt="" />
+                            <img id="javascript" src="img/JavaScript.png" alt="" />
                         </div>
                         <div class="skill texto">
                             <p>JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas.</p>
@@ -135,7 +135,7 @@ const Navbar = () => {
                     </div>
                     <div class="card">
                         <div class="skill img">
-                            <img id="vite" src="public/img/vite.png" alt="" />
+                            <img id="vite" src="img/vite.png" alt="" />
                         </div>
                         <div class="skill texto">
                             <p>Herramienta de compilación que proporciona una experiencia de desarrollo más rápida y ágil para proyectos web modernos.</p>
@@ -146,7 +146,7 @@ const Navbar = () => {
                 <div class="skill-row">
                     <div class="card">
                         <div class="skill img">
-                            <img id="react" src="public/img/react.png" alt="" />
+                            <img id="react" src="img/react.png" alt="" />
                         </div>
                         <div class="skill texto">
                             <p>Biblioteca Javascript de código abierto diseñada para crear interfaces de usuario que facilita el desarrollo de aplicaciones en una sola página. </p>
@@ -154,7 +154,7 @@ const Navbar = () => {
                     </div>
                     <div class="card">
                         <div class="skill img">
-                            <img id="java"  src="public/img/java.png" alt="" />
+                            <img id="java"  src="img/java.png" alt="" />
                         </div>
                         <div class="skill texto">
                             <p>Java es un lenguaje de programación orientado a objetos y una plataforma informática que se utiliza para crear aplicaciones.</p>
@@ -162,7 +162,7 @@ const Navbar = () => {
                     </div>
                     <div class="card">
                         <div class="skill img">
-                            <img id="spring"  src="public/img/spring-boot.png" alt="" />
+                            <img id="spring"  src="img/spring-boot.png" alt="" />
                         </div>
                         <div class="skill texto">
                             <p>Marco de Java basado en microservicios de código abierto, especialmente útil para ingenieros de software que desarrollan aplicaciones web.</p>
@@ -170,7 +170,7 @@ const Navbar = () => {
                     </div>
                     <div class="card">
                         <div class="skill img">
-                            <img id="posgre"  src="public/img/postgres.webp" alt="" />
+                            <img id="posgre"  src="img/postgres.webp" alt="" />
                         </div>
                         <div class="skill texto">
                             <p>Es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto.</p>
@@ -178,7 +178,7 @@ const Navbar = () => {
                     </div>
                     <div class="card">
                         <div class="skill img">
-                            <img id="mysql"  src="public/img/mysql.png" alt="" />
+                            <img id="mysql"  src="img/mysql.png" alt="" />
                         </div>
                         <div class="skill texto">
                             <p>Es un sistema de gestión de bases de datos (DBMS, por sus siglas en inglés) de código abierto desarrollado por Oracle. </p>
@@ -210,22 +210,22 @@ const Navbar = () => {
                     
                     <div>
                         <a href="https://github.com/YefersonMauricioDiazChogo21" target="_blank">
-                            <img id="github" src="public/img/github.png" alt="" />
+                            <img id="github" src="img/github.png" alt="" />
                         </a>
                     </div>
                     <div>
                         <a href="mailto:yefersondiaz2001gmail.com" target='_blank'>
-                            <img id="gmail" src="public/img/gmail.png" alt="" />
+                            <img id="gmail" src="img/gmail.png" alt="" />
                         </a>
                     </div>
                     <div>
                         <a href="https://wa.me/3143807720" target='_blank'>
-                            <img id="whatsapp" src="public/img/whatsapp.png" alt="" />
+                            <img id="whatsapp" src="img/whatsapp.png" alt="" />
                         </a>
                     </div>
                     <div>
                         <a href="https://www.linkedin.com/in/yeferson-mauricio-diaz-chogo-9645bb2a5/" target='_blank'>
-                            <img id="linkedin" src="public/img/linkedin.png" alt="" />
+                            <img id="linkedin" src="img/linkedin.png" alt="" />
                         </a>
                     </div>
 
