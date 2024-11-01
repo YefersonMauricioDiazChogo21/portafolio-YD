@@ -54,6 +54,7 @@ const Navbar = () => {
     return (
         <>
             <StarBackground /> {}
+            <div class="cont">
             <nav  id="home" className="navbar">
                 <div className="navbar-brand">
                     <h1>Yeferson Diaz</h1>
@@ -234,6 +235,7 @@ const Navbar = () => {
                     <p>Creado con React y mucho &#10084;</p>
                 </div>
             </footer>
+            </div>
         </>
     );
 };

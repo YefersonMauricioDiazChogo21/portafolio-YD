@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -91,8 +92,6 @@ function App() {
 
         if (star.x < 0 || star.x > canvas.width) star.dx *= -1;
         if (star.y < 0 || star.y > canvas.height) star.dy *= -1;
-
-      
       });
     };
 
@@ -136,19 +135,18 @@ function App() {
   return (
     <>
       <canvas ref={canvasRef} className="canvas-container"></canvas>
-      <div>
-        <img class="logo-yd" src="img/logo-removebg-preview.png" alt="" />
+      <div class="margin">
+        <img className="logo-yd" src="img/logo-removebg-preview.png" alt="" />
         <p className="etiqueta">Back-end<br /> Developer</p>
         <h1>Portafolio digital <br /> Yeferson Diaz</h1>
         <h3>Acompañame en este viaje por el mundo</h3>
-        <a href="./portafolio.html" target="_parent">
+        <Link to="/portafolio">
           <img src="img/moon-phase-today-big-16.webp" className="logo moon" alt="logo moon" />
-        </a>
+        </Link>
       </div>
       <p className="read-the-docs">
         Haz click en la luna para comenzar..
       </p>
-      
     </>
   );
 }
