@@ -137,12 +137,12 @@ function App() {
     <>
       <canvas ref={canvasRef} className="canvas-container"></canvas>
       <div>
-        <img class="logo-yd" src="public/img/logo-removebg-preview.png" alt="" />
+        <img class="logo-yd" src="img/logo-removebg-preview.png" alt="" />
         <p className="etiqueta">Back-end<br /> Developer</p>
         <h1>Portafolio digital <br /> Yeferson Diaz</h1>
         <h3>Acompañame en este viaje por el mundo</h3>
-        <a href="portafolio.html" target="_parent">
-          <img src="public/img/moon-phase-today-big-16.webp" className="logo moon" alt="logo moon" />
+        <a href="./portafolio.html" target="_parent">
+          <img src="img/moon-phase-today-big-16.webp" className="logo moon" alt="logo moon" />
         </a>
       </div>
       <p className="read-the-docs">
